@@ -9,7 +9,7 @@ function formatarValor(valor: number | "PLACEHOLDER", moeda: string) {
 }
 
 export default function Escopo({ proposta }: { proposta: Proposta }) {
-  const { escopo, investimento, prazo, manutencao } = proposta;
+  const { escopo, investimento, prazo, manutencao, custosInfraestrutura } = proposta;
   return (
     <section id="escopo" className="py-24">
       <div className="shell">
@@ -120,6 +120,31 @@ export default function Escopo({ proposta }: { proposta: Proposta }) {
                 </div>
               ) : null}
             </div>
+          </div>
+        ) : null}
+
+        {custosInfraestrutura && custosInfraestrutura.length > 0 ? (
+          <div className="mt-3 rounded-2xl border border-line bg-off p-7 md:p-8">
+            <b className="text-[11px] font-bold tracking-[.1em] text-deep uppercase">
+              Custos de infraestrutura estimados
+            </b>
+            <p className="mt-2 text-[13px] leading-relaxed text-muted">
+              Pagos à parte, direto aos provedores — não fazem parte do investimento nem da
+              manutenção.
+            </p>
+            <ul className="m-0 mt-4 grid gap-2 p-0 sm:grid-cols-2">
+              {custosInfraestrutura.map((c) => (
+                <li
+                  key={c.nome}
+                  className="flex items-center justify-between gap-3 rounded-lg border border-line bg-white px-4 py-3 text-[13px]"
+                >
+                  <span className="text-[#3a3c3a]">{c.nome}</span>
+                  <span className="font-semibold text-ink">
+                    {formatarValor(c.valor, investimento.moeda)}/{c.periodicidade}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </div>
         ) : null}
       </div>

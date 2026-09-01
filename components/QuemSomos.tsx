@@ -1,23 +1,5 @@
 import SectionHead from "./SectionHead";
 
-const PILARES = [
-  {
-    numero: "01",
-    titulo: "Clara",
-    texto: "Frases curtas, benefícios concretos e pouco jargão técnico.",
-  },
-  {
-    numero: "02",
-    titulo: "Pragmática",
-    texto: "Falamos de gargalos, tempo, conversão e escala — não de tecnologia pela tecnologia.",
-  },
-  {
-    numero: "03",
-    titulo: "Confiante",
-    texto: "Demonstramos impacto com evidências e exemplos reais, sem promessas absolutas.",
-  },
-];
-
 export default function QuemSomos() {
   return (
     <section id="quem-somos" className="py-24">
@@ -33,7 +15,7 @@ export default function QuemSomos() {
           description="A Automatize Mais (ATM+) identifica gargalos operacionais, conecta os processos e constrói soluções que evoluem com o negócio."
         />
 
-        <article className="mb-3 grid gap-6 rounded-2xl border border-line bg-white p-7 md:grid-cols-[auto_1fr] md:items-center md:gap-8 md:p-8">
+        <article className="grid gap-6 rounded-2xl border border-line bg-white p-7 md:grid-cols-[auto_1fr] md:items-center md:gap-8 md:p-8">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="https://www.automatizemais.com/matheus-donha-founder.png"
@@ -47,16 +29,6 @@ export default function QuemSomos() {
             </span>
           </div>
         </article>
-
-        <div className="grid gap-3 md:grid-cols-3">
-          {PILARES.map((p) => (
-            <article key={p.numero} className="rounded-2xl border border-line bg-white p-7">
-              <span className="text-4xl text-green">{p.numero}</span>
-              <h3 className="mt-6 mb-2 text-lg tracking-[-.02em]">{p.titulo}</h3>
-              <p className="m-0 text-[13px] leading-relaxed text-muted">{p.texto}</p>
-            </article>
-          ))}
-        </div>
       </div>
     </section>
   );

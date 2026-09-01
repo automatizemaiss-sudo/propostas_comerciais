@@ -60,12 +60,20 @@ export interface Proposta {
     assinadoEm?: string;
     pdfUrl?: string;
   };
+  /** Custos recorrentes de terceiros (servidor, tokens de IA etc.) pagos à parte pelo cliente. */
+  custosInfraestrutura?: Array<{
+    nome: string;
+    valor: number | "PLACEHOLDER";
+    periodicidade: string;
+  }>;
 }
 
 export interface Case {
   slug: string;
   cliente: string;
   logo?: string;
+  /** Foto de uma pessoa associada ao case (fundador, cliente), exibida ao lado do logo. */
+  foto?: string;
   resumo: string;
   resultado: string;
   destaques: string[];

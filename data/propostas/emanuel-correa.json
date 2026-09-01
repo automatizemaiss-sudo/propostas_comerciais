@@ -1,7 +1,7 @@
 {
   "slug": "emanuel-correa",
   "criadoEm": "2026-09-01",
-  "validaAte": "2026-09-15",
+  "validaAte": "2026-09-04",
   "incluirFechamento": false,
   "cliente": {
     "empresa": "Emanuel Corrêa Consultoria",
@@ -17,15 +17,15 @@
   "problemas": [
     {
       "titulo": "Atendimento Manual e Solo",
-      "descricao": "Todo o atendimento de novos leads e alunos acontece pelo WhatsApp pessoal do Emanuel, sem equipe e sem CRM — como ele mesmo descreveu, é 'eu e Deus'."
+      "descricao": "Todo o atendimento de novos leads e alunos acontece pelo WhatsApp pessoal do Emanuel, sem equipe e sem CRM."
     },
     {
-      "titulo": "Zero Follow-up com Leads Frios",
-      "descricao": "Dos 30 contatos que chegam por semana via anúncio no Instagram, apenas 3 viram venda (10%). Os outros 27 não recebem nenhum retorno — sem follow-up, esses leads se perdem toda semana."
+      "titulo": "Zero Follow-up",
+      "descricao": "Aqueles leads que não compram no primeiro contato, não são contactados novamente em outro momento."
     },
     {
       "titulo": "Janela de Resposta Limitada",
-      "descricao": "O atendimento só acontece das 10h às 17-18h, quando Emanuel está no computador. Fora desse horário — incluindo fins de semana e feriados — ninguém responde os leads."
+      "descricao": "O atendimento só acontece quando Emanuel está ativo. Fora desse momento ninguém responde os leads."
     },
     {
       "titulo": "Falta de Visibilidade do Funil",
@@ -39,11 +39,11 @@
     },
     {
       "titulo": "Follow-up Automático",
-      "descricao": "Três disparos automáticos (1h30, 10h e ~21h depois que o lead para de responder) recuperando contatos que hoje se perdem sem nenhum retorno."
+      "descricao": "Disparos automáticos recuperando contatos que hoje se perdem sem nenhum retorno."
     },
     {
       "titulo": "Atendimento 24 Horas",
-      "descricao": "Os leads são respondidos a qualquer hora, todo dia — inclusive fins de semana e feriados — sem depender do Emanuel estar no computador."
+      "descricao": "Os leads são respondidos a qualquer hora, todo dia — inclusive fins de semana e feriados — sem depender do Emanuel estar ativo."
     },
     {
       "titulo": "CRM e Dashboard de Métricas",
@@ -52,31 +52,30 @@
   ],
   "escopo": {
     "desenvolvimento": [
-      "Construir IA de atendimento para WhatsApp e/ou Instagram",
-      "Implementar fluxo de qualificação automatizada com as perguntas do Emanuel (treino, dieta, hormônio, exames)",
-      "Configurar sistema de follow-up automático (3 disparos após inatividade)",
-      "Implementar CRM com visualização da etapa de cada lead",
-      "Construir dashboard com métricas de leads, qualificação, follow-ups e conversão",
-      "Integrar agendamento automático ao Google Calendário"
+      "Implementação de um fluxo de vendas automatizado com IA, para atendimento no WhatsApp e/ou Instagram do Emanuel",
+      "Configuração do sistema de follow-up automático",
+      "Implementação do CRM com visualização da etapa de cada lead",
+      "Construção do dashboard com métricas de leads, qualificação, follow-ups, conversão e ROI",
+      "Integração de agendamento automático ao Google Calendário"
     ],
     "gerenciamento": [
-      "Realizar call de onboarding para coletar acessos e modular o tom de voz da IA",
-      "Ajustar a IA com base em conversas reais até ficar no estilo do Emanuel",
+      "Realização da call de onboarding para coletar acessos e modular o tom de voz da IA",
+      "Ajuste da IA com base em conversas reais até ficar no estilo do Emanuel",
       "Dar suporte técnico durante a implementação",
-      "Acompanhar métricas de conversão durante a manutenção mensal"
+      "Acompanhamento de métricas de conversão durante a manutenção mensal"
     ]
   },
   "investimento": {
     "valor": 4000,
     "moeda": "BRL",
-    "condicoes": "Pode ser parcelado em até 3x no cartão (R$ 1.333,33 cada). A manutenção mensal de R$ 2.000,00 inicia 30 dias após a call de onboarding.",
+    "condicoes": "Pode ser parcelado em até 3x no cartão (R$ 1.333,33 cada). 30 dias corridos após a reunião de on-boarding inicia o período da manutenção e seu primeiro pagamento.",
     "linkPagamento": "PLACEHOLDER"
   },
   "prazo": {
     "entregaDias": 5,
-    "observacao": "Dias úteis. Depois da entrega, período de teste de 7 dias úteis para validação da solução."
+    "observacao": "Depois da entrega da versão, inicia um período de testes de 7 dias úteis para validação da solução."
   },
-  "cases": ["voltz"],
+  "cases": ["voltz", "weburn", "thiago-sampaio"],
   "contrato": {
     "foro": "Ponta Grossa/PR",
     "suporteDias": 30
@@ -100,5 +99,9 @@
       "Custos de APIs, hospedagem ou outros serviços de terceiros",
       "Alterações amplas de fluxo comercial — orçadas à parte"
     ]
-  }
+  },
+  "custosInfraestrutura": [
+    { "nome": "Servidor", "valor": 89.9, "periodicidade": "mês" },
+    { "nome": "Tokens de IA", "valor": 100, "periodicidade": "mês" }
+  ]
 }

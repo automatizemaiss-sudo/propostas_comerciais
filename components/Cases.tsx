@@ -20,13 +20,21 @@ export default function Cases({ proposta }: { proposta: Proposta }) {
           }
           description="Projetos com o mesmo tipo de gargalo que identificamos na sua operação."
         />
-        <div className="grid gap-3 md:grid-cols-2">
+        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
           {cases.map((c) => (
             <article
               key={c!.slug}
               className="rounded-2xl border border-[#292d2a] bg-[#151816] p-8"
             >
               <div className="flex items-center gap-3">
+                {c!.foto ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={c!.foto}
+                    alt={c!.cliente}
+                    className="h-9 w-9 shrink-0 rounded-full object-cover"
+                  />
+                ) : null}
                 {c!.logo ? (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img

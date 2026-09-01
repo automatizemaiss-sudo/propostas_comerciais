@@ -85,6 +85,17 @@ depois do contrato de implementação: `valorMensal`, `diaVencimento` (dia do m�
 `formaPagamento` (ex. `"Pix"`), `prazoVigencia` (ex. `"12 meses"`), `avisoPrevioDias` e
 `diasSuspensao`.
 
+`incluso`/`naoIncluso` (opcionais): listas curtas mostradas na própria página (não só no
+contrato) do que está e não está coberto pela mensalidade. Use as cláusulas 3ª e 4ª de
+`content/contrato-manutencao.md` como base, mas resuma pro contexto específico do cliente.
+
+## `custosInfraestrutura` (opcional)
+
+Custos recorrentes de terceiros (servidor, tokens de IA, número de WhatsApp, etc.) que o
+cliente paga direto ao provedor — fora do investimento e da manutenção. Só preencha se
+foi estimado/discutido na reunião. Cada item: `nome`, `valor` (ou `"PLACEHOLDER"`) e
+`periodicidade` (ex. `"mês"`).
+
 ## Tom de voz
 
 Português do Brasil, direto, sem jargão de agência, sem superlativo vazio
