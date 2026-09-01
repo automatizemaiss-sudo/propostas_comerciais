@@ -69,12 +69,12 @@
   "investimento": {
     "valor": 4000,
     "moeda": "BRL",
-    "condicoes": "Pode ser parcelado em até 3x no cartão (R$ 1.333,33 cada). Após 30 dias do início, inicia a manutenção mensal de R$ 2.000,00.",
+    "condicoes": "Pode ser parcelado em até 3x no cartão (R$ 1.333,33 cada). A manutenção mensal de R$ 2.000,00 inicia 30 dias após a call de onboarding.",
     "linkPagamento": "PLACEHOLDER"
   },
   "prazo": {
-    "entregaDias": "PLACEHOLDER",
-    "observacao": "[FALTA CONFIRMAR: prazo não foi discutido na reunião]"
+    "entregaDias": 5,
+    "observacao": "Dias úteis. Depois da entrega, período de teste de 7 dias úteis para validação da solução."
   },
   "cases": ["voltz"],
   "contrato": {
@@ -87,6 +87,18 @@
     "formaPagamento": "[FALTA CONFIRMAR]",
     "prazoVigencia": "[FALTA CONFIRMAR]",
     "avisoPrevioDias": "PLACEHOLDER",
-    "diasSuspensao": "PLACEHOLDER"
+    "diasSuspensao": "PLACEHOLDER",
+    "incluso": [
+      "Correção de falhas de funcionamento da IA, do follow-up e do dashboard",
+      "Ajustes no tom de voz e nas perguntas de qualificação da IA",
+      "Acompanhamento das métricas de conversão e ajustes finos no fluxo de atendimento",
+      "Suporte técnico para dúvidas de uso do CRM e do dashboard"
+    ],
+    "naoIncluso": [
+      "Novas funcionalidades ou automações fora do escopo original",
+      "Novas integrações não previstas na implementação",
+      "Custos de APIs, hospedagem ou outros serviços de terceiros",
+      "Alterações amplas de fluxo comercial — orçadas à parte"
+    ]
   }
 }

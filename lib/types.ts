@@ -49,6 +49,10 @@ export interface Proposta {
     prazoVigencia: string;
     avisoPrevioDias: number | "PLACEHOLDER";
     diasSuspensao: number | "PLACEHOLDER";
+    /** O que está incluso no valor mensal — mostrado na página, não só no contrato. */
+    incluso?: string[];
+    /** O que NÃO está incluso no valor mensal — mostrado na página, não só no contrato. */
+    naoIncluso?: string[];
   };
   assinatura?: {
     status: "pendente" | "assinado";
