@@ -26,17 +26,23 @@ export default async function PropostaPage({
   const proposta = lerProposta(slug);
   if (!proposta) notFound();
 
+  const incluirFechamento = proposta.incluirFechamento !== false;
+
   return (
     <main>
-      <Topbar />
+      <Topbar incluirFechamento={incluirFechamento} />
       <Capa proposta={proposta} />
       <Problema proposta={proposta} />
       <Solucao proposta={proposta} />
       <QuemSomos />
       <Cases proposta={proposta} />
       <Escopo proposta={proposta} />
-      <Contrato proposta={proposta} />
-      <AssinaturaPagamento proposta={proposta} />
+      {incluirFechamento ? (
+        <>
+          <Contrato proposta={proposta} />
+          <AssinaturaPagamento proposta={proposta} />
+        </>
+      ) : null}
       <footer className="bg-[#062719] py-14 text-white">
         <div className="shell flex flex-col items-center justify-between gap-6 md:flex-row">
           <Logo />

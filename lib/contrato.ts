@@ -9,6 +9,10 @@ function formatarValor(valor: number | "PLACEHOLDER", moeda: string) {
   );
 }
 
+function formatarNumero(valor: number | "PLACEHOLDER") {
+  return valor === "PLACEHOLDER" ? "[FALTA CONFIRMAR]" : String(valor);
+}
+
 function formatarDataExtenso(iso: string) {
   const data = new Date(`${iso}T00:00:00`);
   return data.toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" });
@@ -69,11 +73,11 @@ export function montarContrato(proposta: Proposta, empresa: Empresa): string {
   const manutencao = preencher(lerTemplate("contrato-manutencao.md"), {
     ...partes,
     VALOR_MENSAL: formatarValor(proposta.manutencao.valorMensal, proposta.investimento.moeda),
-    DIA_VENCIMENTO: String(proposta.manutencao.diaVencimento),
+    DIA_VENCIMENTO: formatarNumero(proposta.manutencao.diaVencimento),
     FORMA_PAGAMENTO: proposta.manutencao.formaPagamento,
     PRAZO_VIGENCIA: proposta.manutencao.prazoVigencia,
-    DIAS_SUSPENSAO: String(proposta.manutencao.diasSuspensao),
-    AVISO_PREVIO_DIAS: String(proposta.manutencao.avisoPrevioDias),
+    DIAS_SUSPENSAO: formatarNumero(proposta.manutencao.diasSuspensao),
+    AVISO_PREVIO_DIAS: formatarNumero(proposta.manutencao.avisoPrevioDias),
   });
 
   return `${implementacao}\n\n---\n\n${manutencao}`;

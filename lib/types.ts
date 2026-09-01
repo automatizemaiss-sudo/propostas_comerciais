@@ -2,6 +2,8 @@ export interface Proposta {
   slug: string;
   criadoEm: string;
   validaAte: string;
+  /** false = página enxuta, sem Contrato/Aceite/Pagamento (lead ainda não fechou). Padrão: true. */
+  incluirFechamento?: boolean;
   cliente: {
     empresa: string;
     razaoSocial: string;
@@ -32,7 +34,7 @@ export interface Proposta {
     linkPagamento: string;
   };
   prazo: {
-    entregaDias: number;
+    entregaDias: number | "PLACEHOLDER";
     observacao: string;
   };
   cases: string[];
@@ -41,12 +43,12 @@ export interface Proposta {
     suporteDias: number;
   };
   manutencao?: {
-    valorMensal: number;
-    diaVencimento: number;
+    valorMensal: number | "PLACEHOLDER";
+    diaVencimento: number | "PLACEHOLDER";
     formaPagamento: string;
     prazoVigencia: string;
-    avisoPrevioDias: number;
-    diasSuspensao: number;
+    avisoPrevioDias: number | "PLACEHOLDER";
+    diasSuspensao: number | "PLACEHOLDER";
   };
   assinatura?: {
     status: "pendente" | "assinado";

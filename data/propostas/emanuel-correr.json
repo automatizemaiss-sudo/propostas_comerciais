@@ -1,0 +1,92 @@
+{
+  "slug": "emanuel-correr",
+  "criadoEm": "2026-09-01",
+  "validaAte": "2026-09-15",
+  "incluirFechamento": false,
+  "cliente": {
+    "empresa": "[FALTA CONFIRMAR: nome do negócio/marca a usar na proposta]",
+    "razaoSocial": "[FALTA CONFIRMAR]",
+    "cnpj": "[FALTA CONFIRMAR]",
+    "endereco": "[FALTA CONFIRMAR]",
+    "responsavel": {
+      "nome": "Emanuel",
+      "email": "[FALTA CONFIRMAR]",
+      "cargo": "Coach esportivo estratégico"
+    }
+  },
+  "problemas": [
+    {
+      "titulo": "Atendimento Manual e Solo",
+      "descricao": "Todo o atendimento de novos leads e alunos acontece pelo WhatsApp pessoal do Emanuel, sem equipe e sem CRM — como ele mesmo descreveu, é 'eu e Deus'."
+    },
+    {
+      "titulo": "Zero Follow-up com Leads Frios",
+      "descricao": "Dos 30 contatos que chegam por semana via anúncio no Instagram, apenas 3 viram venda (10%). Os outros 27 não recebem nenhum retorno — sem follow-up, esses leads se perdem toda semana."
+    },
+    {
+      "titulo": "Janela de Resposta Limitada",
+      "descricao": "O atendimento só acontece das 10h às 17-18h, quando Emanuel está no computador. Fora desse horário — incluindo fins de semana e feriados — ninguém responde os leads."
+    },
+    {
+      "titulo": "Falta de Visibilidade do Funil",
+      "descricao": "Não existe um CRM ou dashboard mostrando em que etapa cada lead está, nem métricas de quantos follow-ups levam a uma venda — o que dificulta saber qual conteúdo está trazendo público qualificado."
+    }
+  ],
+  "solucoes": [
+    {
+      "titulo": "Atendimento com IA no WhatsApp/Instagram",
+      "descricao": "A IA responde os leads na hora, com um estilo humanizado que reproduz o jeito de falar do Emanuel, fazendo a qualificação (treina? faz dieta? usa hormônio? tem exame?) aos poucos, sem soltar tudo de uma vez."
+    },
+    {
+      "titulo": "Follow-up Automático",
+      "descricao": "Três disparos automáticos (1h30, 10h e ~21h depois que o lead para de responder) recuperando contatos que hoje se perdem sem nenhum retorno."
+    },
+    {
+      "titulo": "Atendimento 24 Horas",
+      "descricao": "Os leads são respondidos a qualquer hora, todo dia — inclusive fins de semana e feriados — sem depender do Emanuel estar no computador."
+    },
+    {
+      "titulo": "CRM e Dashboard de Métricas",
+      "descricao": "Painel mostrando a etapa de cada lead, quantos follow-ups foram enviados e quantos levaram a uma resposta ou venda — dados pra saber qual conteúdo está trazendo lead qualificado."
+    }
+  ],
+  "escopo": {
+    "desenvolvimento": [
+      "Construir IA de atendimento para WhatsApp e/ou Instagram",
+      "Implementar fluxo de qualificação automatizada com as perguntas do Emanuel (treino, dieta, hormônio, exames)",
+      "Configurar sistema de follow-up automático (3 disparos após inatividade)",
+      "Implementar CRM com visualização da etapa de cada lead",
+      "Construir dashboard com métricas de leads, qualificação, follow-ups e conversão",
+      "Integrar agendamento automático ao Google Calendário"
+    ],
+    "gerenciamento": [
+      "Realizar call de onboarding para coletar acessos e modular o tom de voz da IA",
+      "Ajustar a IA com base em conversas reais até ficar no estilo do Emanuel",
+      "Dar suporte técnico durante a implementação",
+      "Acompanhar métricas de conversão durante a manutenção mensal"
+    ]
+  },
+  "investimento": {
+    "valor": 4000,
+    "moeda": "BRL",
+    "condicoes": "Pode ser parcelado em até 3x no cartão (R$ 1.333,33 cada). Após 30 dias do início, inicia a manutenção mensal de R$ 2.000,00.",
+    "linkPagamento": "PLACEHOLDER"
+  },
+  "prazo": {
+    "entregaDias": "PLACEHOLDER",
+    "observacao": "[FALTA CONFIRMAR: prazo não foi discutido na reunião]"
+  },
+  "cases": ["voltz"],
+  "contrato": {
+    "foro": "Ponta Grossa/PR",
+    "suporteDias": 30
+  },
+  "manutencao": {
+    "valorMensal": 2000,
+    "diaVencimento": "PLACEHOLDER",
+    "formaPagamento": "[FALTA CONFIRMAR]",
+    "prazoVigencia": "[FALTA CONFIRMAR]",
+    "avisoPrevioDias": "PLACEHOLDER",
+    "diasSuspensao": "PLACEHOLDER"
+  }
+}

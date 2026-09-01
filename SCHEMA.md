@@ -14,6 +14,14 @@ valor plausível.
 
 kebab-case, a partir do nome da empresa do lead. Vira a URL: `proposta.<dominio>/<slug>`.
 
+## `incluirFechamento` (opcional)
+
+`false` gera uma versão enxuta da página — sem Contrato, Aceite nem Pagamento — pra leads
+que ainda não fecharam (ex.: "manda a proposta, mas ele ainda vai decidir"). Omita o campo
+(ou deixe `true`) para a página completa, de fechamento. Quando `false`, ainda preencha
+`contrato` e `investimento` com o que foi combinado — os campos só não aparecem
+renderizados, mas ficam prontos pra quando a página for atualizada pra `true`.
+
 ## `cliente`
 
 Nome da empresa, razão social, CNPJ, endereço e responsável (nome, e-mail, cargo) —
@@ -46,8 +54,9 @@ só preencha o que foi dito explicitamente. Campos não mencionados ficam
 ## `investimento` e `prazo`
 
 - Só preencher `valor`, `condicoes`, `entregaDias` se foi discutido na reunião. Caso
-  contrário, `"[FALTA CONFIRMAR]"` (para `valor`, use a string `"PLACEHOLDER"` — é o valor
-  que `Pagamento.tsx` reconhece para desabilitar o link de pagamento).
+  contrário, use a string `"PLACEHOLDER"` em `valor` e/ou `entregaDias` — é o valor que os
+  componentes reconhecem para mostrar "[FALTA CONFIRMAR]" (e, no caso de `valor`, também
+  desabilita o link de pagamento).
 - `linkPagamento` sempre começa como `"PLACEHOLDER"` — é preenchido manualmente depois que
   o contrato é assinado.
 

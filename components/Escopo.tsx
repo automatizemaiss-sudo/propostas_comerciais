@@ -66,7 +66,7 @@ export default function Escopo({ proposta }: { proposta: Proposta }) {
               Prazo de entrega
             </span>
             <p className="mt-3 text-[clamp(32px,4vw,44px)] leading-none tracking-[-.03em]">
-              {prazo.entregaDias} dias
+              {prazo.entregaDias === "PLACEHOLDER" ? "[FALTA CONFIRMAR]" : `${prazo.entregaDias} dias`}
             </p>
             <p className="mt-3 text-[13px] leading-relaxed text-muted">{prazo.observacao}</p>
           </article>
