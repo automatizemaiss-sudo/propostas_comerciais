@@ -20,7 +20,7 @@ export default function Cases({ proposta }: { proposta: Proposta }) {
           }
           description="Projetos com o mesmo tipo de gargalo que identificamos na sua operação."
         />
-        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-3 lg:grid-cols-3">
           {cases.map((c) => (
             <article
               key={c!.slug}
@@ -43,9 +43,11 @@ export default function Cases({ proposta }: { proposta: Proposta }) {
                     className="h-6 w-auto max-w-[110px] object-contain"
                   />
                 ) : null}
-                <span className="text-[11px] font-bold tracking-[.1em] text-green uppercase">
-                  {c!.cliente}
-                </span>
+                {!c!.ocultarNomeTexto ? (
+                  <span className="text-[11px] font-bold tracking-[.1em] text-green uppercase">
+                    {c!.cliente}
+                  </span>
+                ) : null}
               </div>
               <p className="mt-4 mb-6 text-[15px] leading-relaxed text-[#c7cbc8]">{c!.resumo}</p>
               <p className="m-0 text-lg tracking-[-.02em] text-white">{c!.resultado}</p>

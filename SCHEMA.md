@@ -59,12 +59,20 @@ só preencha o que foi dito explicitamente. Campos não mencionados ficam
   desabilita o link de pagamento).
 - `linkPagamento` sempre começa como `"PLACEHOLDER"` — é preenchido manualmente depois que
   o contrato é assinado.
+- `unidade` (opcional, em `prazo`): sufixo mostrado depois do número de dias, ex.
+  `"úteis"` ou `"corridos"`. Só preencha se o cliente especificou; sem isso o card mostra
+  só "N dias".
 
 ## `cases`
 
 Array de slugs referenciando `content/cases/<slug>.json`. Escolha o case mais parecido
 com o gargalo do lead. Se nenhum existente encaixar, sinalize
 `[FALTA CONFIRMAR: qual case usar]` em vez de inventar um.
+
+Ao criar um novo `content/cases/<slug>.json`: se o `logo` já for um wordmark com o nome
+escrito por extenso (ex. Weburn), marque `"ocultarNomeTexto": true` pra não repetir o
+nome do cliente ao lado — se o logo for só um símbolo/monograma (ex. um "V" ou um ícone),
+deixe omitido/`false` pra manter o nome visível em texto.
 
 ## `contrato`
 
@@ -88,6 +96,11 @@ depois do contrato de implementação: `valorMensal`, `diaVencimento` (dia do m�
 `incluso`/`naoIncluso` (opcionais): listas curtas mostradas na própria página (não só no
 contrato) do que está e não está coberto pela mensalidade. Use as cláusulas 3ª e 4ª de
 `content/contrato-manutencao.md` como base, mas resuma pro contexto específico do cliente.
+
+`inicio` (opcional): frase explicando quando a manutenção começa e quando cai o primeiro
+pagamento, ex. `"30 dias corridos após a reunião de onboarding..."`. Aparece no próprio
+card de manutenção — não misture essa informação em `investimento.condicoes`, que é só
+sobre o pagamento da implementação.
 
 ## `custosInfraestrutura` (opcional)
 

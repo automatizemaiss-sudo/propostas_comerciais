@@ -66,7 +66,9 @@ export default function Escopo({ proposta }: { proposta: Proposta }) {
               Prazo de entrega
             </span>
             <p className="mt-3 text-[clamp(32px,4vw,44px)] leading-none tracking-[-.03em]">
-              {prazo.entregaDias === "PLACEHOLDER" ? "[FALTA CONFIRMAR]" : `${prazo.entregaDias} dias`}
+              {prazo.entregaDias === "PLACEHOLDER"
+                ? "[FALTA CONFIRMAR]"
+                : `${prazo.entregaDias} dias${prazo.unidade ? ` ${prazo.unidade}` : ""}`}
             </p>
             <p className="mt-3 text-[13px] leading-relaxed text-muted">{prazo.observacao}</p>
           </article>
@@ -82,6 +84,9 @@ export default function Escopo({ proposta }: { proposta: Proposta }) {
                 {formatarValor(manutencao.valorMensal, investimento.moeda)}/mês
               </span>
             </div>
+            {manutencao.inicio ? (
+              <p className="mt-3 text-[13px] leading-relaxed text-muted">{manutencao.inicio}</p>
+            ) : null}
             <div className="mt-5 grid gap-6 md:grid-cols-2">
               {manutencao.incluso && manutencao.incluso.length > 0 ? (
                 <div>

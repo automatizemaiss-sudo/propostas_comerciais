@@ -35,6 +35,8 @@ export interface Proposta {
   };
   prazo: {
     entregaDias: number | "PLACEHOLDER";
+    /** Sufixo mostrado depois do número, ex. "úteis" ou "corridos". Omitir = só "dias". */
+    unidade?: string;
     observacao: string;
   };
   cases: string[];
@@ -53,6 +55,8 @@ export interface Proposta {
     incluso?: string[];
     /** O que NÃO está incluso no valor mensal — mostrado na página, não só no contrato. */
     naoIncluso?: string[];
+    /** Quando a manutenção começa e quando cai o primeiro pagamento — mostrado no card de manutenção. */
+    inicio?: string;
   };
   assinatura?: {
     status: "pendente" | "assinado";
@@ -74,6 +78,8 @@ export interface Case {
   logo?: string;
   /** Foto de uma pessoa associada ao case (fundador, cliente), exibida ao lado do logo. */
   foto?: string;
+  /** true quando o logo já é um wordmark com o nome escrito — evita repetir o nome ao lado. */
+  ocultarNomeTexto?: boolean;
   resumo: string;
   resultado: string;
   destaques: string[];

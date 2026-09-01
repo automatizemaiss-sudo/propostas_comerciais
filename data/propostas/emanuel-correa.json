@@ -68,11 +68,12 @@
   "investimento": {
     "valor": 4000,
     "moeda": "BRL",
-    "condicoes": "Pode ser parcelado em até 3x no cartão (R$ 1.333,33 cada). 30 dias corridos após a reunião de on-boarding inicia o período da manutenção e seu primeiro pagamento.",
+    "condicoes": "Pode ser parcelado em até 3x no cartão (R$ 1.333,33 cada).",
     "linkPagamento": "PLACEHOLDER"
   },
   "prazo": {
     "entregaDias": 5,
+    "unidade": "úteis",
     "observacao": "Depois da entrega da versão, inicia um período de testes de 7 dias úteis para validação da solução."
   },
   "cases": ["voltz", "weburn", "thiago-sampaio"],
@@ -87,6 +88,7 @@
     "prazoVigencia": "[FALTA CONFIRMAR]",
     "avisoPrevioDias": "PLACEHOLDER",
     "diasSuspensao": "PLACEHOLDER",
+    "inicio": "30 dias corridos após a reunião de on-boarding inicia o período da manutenção e seu primeiro pagamento.",
     "incluso": [
       "Correção de falhas de funcionamento da IA, do follow-up e do dashboard",
       "Ajustes no tom de voz e nas perguntas de qualificação da IA",
