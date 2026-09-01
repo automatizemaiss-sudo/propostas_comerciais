@@ -45,11 +45,6 @@ export default function QuemSomos() {
             <span className="text-[11px] font-bold tracking-[.1em] text-deep uppercase">
               Fundador — Especialista em processos e automações para vendas
             </span>
-            <p className="mt-3 max-w-[520px] text-[13px] leading-relaxed text-muted">
-              Fundei a Automatize Mais para tirar operações do modo manual e colocá-las
-              rodando sozinhas. Sou eu quem acompanha cada projeto do diagnóstico à entrega —
-              inclusive o seu.
-            </p>
           </div>
         </article>
 
