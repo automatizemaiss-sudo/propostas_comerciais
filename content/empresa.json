@@ -1,0 +1,16 @@
+{
+  "nomeFantasia": "Automatize Mais",
+  "razaoSocial": "Matheus Miguel Rodrigues Donha",
+  "cnpj": "62775207000195",
+  "endereco": "Rua Coronel José Pedro de Carvalho, 350, Nova Rússia, Ponta Grossa, Paraná, Brasil",
+  "signatario": {
+    "nome": "Matheus",
+    "cargo": "Fundador",
+    "email": "donhamatheus@gmail.com"
+  },
+  "contato": {
+    "email": "donhamatheus@gmail.com",
+    "telefone": "42999883017",
+    "site": "automatizemais.com"
+  }
+}

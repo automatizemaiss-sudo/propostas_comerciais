@@ -1,0 +1,13 @@
+{
+  "slug": "voltz",
+  "cliente": "Voltz Club",
+  "logo": "https://www.automatizemais.com/voltz.png",
+  "resumo": "Implementamos atendimento com IA para suporte e comercial da Voltz Club, disponível 24 horas por dia — inclusive fora do horário comercial.",
+  "resultado": "Aumentou o faturamento e reduziu o custo de operação, segundo o próprio fundador.",
+  "destaques": ["Atendimento 24h", "Nota 10 em indicação", "Redução de custo operacional"],
+  "citacao": {
+    "texto": "Melhorou e superou nossa expectativa, otimizou muito nosso processo e contribuiu aumentando nosso faturamento e reduzindo nosso custo de operação. Ter um atendimento 24h ajudou a gente demais com nossos clientes.",
+    "autor": "Bruno Freitas",
+    "cargo": "Fundador da Voltz Club"
+  }
+}

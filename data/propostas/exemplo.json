@@ -1,0 +1,73 @@
+{
+  "slug": "exemplo",
+  "criadoEm": "2026-08-24",
+  "validaAte": "2026-09-07",
+  "cliente": {
+    "empresa": "Meu Lucro Ativo",
+    "razaoSocial": "Meu Lucro Ativo LTDA",
+    "cnpj": "30.444.414/0001-70",
+    "endereco": "Rua Garibaldi, 2795, Alto da Boa Vista, Ribeirão Preto/SP, CEP 14025-190",
+    "responsavel": {
+      "nome": "Lucas dos Santos",
+      "email": "",
+      "cargo": "Sócio-fundador"
+    }
+  },
+  "problemas": [
+    {
+      "titulo": "Gargalo no Envio de Contratos",
+      "descricao": "O sócio-fundador é o único responsável por encaminhar dados dos executivos para a geração de contratos, o que trava o fechamento sempre que ele está indisponível."
+    },
+    {
+      "titulo": "Retrabalho no Cadastro de Executivos",
+      "descricao": "Os dados de cada novo executivo são digitados manualmente em mais de uma planilha, gerando divergências entre o que foi combinado e o que consta no contrato final."
+    },
+    {
+      "titulo": "Falta de Visibilidade do Funil",
+      "descricao": "Não existe um painel único para acompanhar em que etapa cada proposta está — o acompanhamento é feito por mensagens soltas no WhatsApp."
+    }
+  ],
+  "solucoes": [
+    {
+      "titulo": "Proposta e Contrato Automatizados",
+      "descricao": "Formulário inteligente preenchido pelo executivo que gera automaticamente a proposta e o contrato, sem depender do sócio-fundador para iniciar o processo."
+    },
+    {
+      "titulo": "Cadastro Único de Executivos",
+      "descricao": "Um único formulário alimenta todos os documentos gerados, eliminando a digitação repetida e as divergências entre planilhas."
+    },
+    {
+      "titulo": "Painel de Acompanhamento do Funil",
+      "descricao": "Painel central mostra em que etapa cada proposta está — enviada, visualizada, assinada — substituindo o acompanhamento manual por WhatsApp."
+    }
+  ],
+  "escopo": {
+    "desenvolvimento": [
+      "Construir formulário de fechamento com campos dinâmicos",
+      "Gerar proposta e contrato automaticamente a partir do formulário",
+      "Integrar assinatura eletrônica ao fluxo de fechamento",
+      "Criar painel de acompanhamento das propostas enviadas"
+    ],
+    "gerenciamento": [
+      "Configurar ambiente de testes com dados reais",
+      "Dar suporte técnico durante a implementação",
+      "Treinar o time no uso do novo fluxo",
+      "Documentar o processo para consulta futura"
+    ]
+  },
+  "investimento": {
+    "valor": 15000,
+    "moeda": "BRL",
+    "condicoes": "Entrada de 50% na assinatura e 50% na entrega",
+    "linkPagamento": "PLACEHOLDER"
+  },
+  "prazo": {
+    "entregaDias": 45,
+    "observacao": "Escopo técnico definitivo em até 7 dias após o pagamento da entrada"
+  },
+  "cases": ["voltz"],
+  "contrato": {
+    "foro": "Ponta Grossa/PR",
+    "suporteDias": 30
+  }
+}

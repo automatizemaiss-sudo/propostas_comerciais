@@ -1,0 +1,111 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --green: #00e05a;
+  --deep: #004d2b;
+  --ink: #0d0d0d;
+  --graphite: #2a2a2a;
+  --off: #f6f6f6;
+  --white: #ffffff;
+  --muted: #6f716f;
+  --line: #d9ddd9;
+  --max: 1240px;
+}
+
+@theme inline {
+  --color-green: var(--green);
+  --color-deep: var(--deep);
+  --color-ink: var(--ink);
+  --color-graphite: var(--graphite);
+  --color-off: var(--off);
+  --color-white: var(--white);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --font-sans: var(--font-sora);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--ink);
+  background: var(--off);
+  -webkit-font-smoothing: antialiased;
+}
+
+.shell {
+  width: min(var(--max), calc(100% - 48px));
+  margin-inline: auto;
+}
+
+@media (max-width: 600px) {
+  .shell {
+    width: min(var(--max), calc(100% - 28px));
+  }
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: -3.5px;
+}
+.logo strong {
+  font-weight: 800;
+}
+.logo em {
+  color: var(--green);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+}
+.logo-lines {
+  position: relative;
+  width: 30px;
+  height: 25px;
+  margin-right: 1px;
+}
+.logo-lines i {
+  position: absolute;
+  left: 0;
+  width: 27px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+}
+.logo-lines i::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -4px;
+  width: 6px;
+  height: 6px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  background: var(--off);
+}
+.logo-lines i:nth-child(1) {
+  top: 3px;
+  transform: rotate(13deg);
+}
+.logo-lines i:nth-child(2) {
+  top: 12px;
+}
+.logo-lines i:nth-child(3) {
+  top: 21px;
+  color: var(--green);
+  transform: rotate(-13deg);
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  section {
+    break-inside: avoid;
+  }
+}
