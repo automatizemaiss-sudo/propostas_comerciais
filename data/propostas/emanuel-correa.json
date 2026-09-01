@@ -1,15 +1,15 @@
 {
-  "slug": "emanuel-correr",
+  "slug": "emanuel-correa",
   "criadoEm": "2026-09-01",
   "validaAte": "2026-09-15",
   "incluirFechamento": false,
   "cliente": {
-    "empresa": "[FALTA CONFIRMAR: nome do negócio/marca a usar na proposta]",
+    "empresa": "Emanuel Corrêa Consultoria",
     "razaoSocial": "[FALTA CONFIRMAR]",
     "cnpj": "[FALTA CONFIRMAR]",
     "endereco": "[FALTA CONFIRMAR]",
     "responsavel": {
-      "nome": "Emanuel",
+      "nome": "Emanuel Corrêa",
       "email": "[FALTA CONFIRMAR]",
       "cargo": "Coach esportivo estratégico"
     }
